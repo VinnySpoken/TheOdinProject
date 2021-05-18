@@ -1,0 +1,181 @@
+html {
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 13px;
+    background-color: white;
+    height: auto;      
+}
+
+
+header{    
+    display: flex;
+    justify-content:flex-end; 
+    align-items: center;
+    width: auto;     
+    height: auto;
+    margin-top: 5px ;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}    
+
+header a{
+    padding: 10px;
+}
+
+#login{
+    color: white;
+    font-weight: bold;
+    background-color: #4285f4;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+#login:hover{
+    background-color: #5C96F5;
+    text-decoration: none;
+}
+
+main {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    
+    /* centering the Main div  */
+    left: 50%;
+    top: 40%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+     transform: translateX(-50%) translateY(-50%);      
+          
+}
+
+.barra{   
+    display: flex;
+    align-items: center;
+    background: #fff;    
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: none;
+    height: 44px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 584px;   
+    margin-top: 25px;  
+}
+
+.barra:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-bar {
+    height: auto;
+    flex: auto;
+}   
+
+input{
+    height: 34px;
+    border: none; 
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    word-wrap: break-word;
+    outline: none;
+    width: 100%;    
+}
+
+#lente {
+    padding: 10px;
+    height: 24px;
+    width: 24px; 
+    opacity: 0.3;
+}
+
+#mic{
+    height: 24px;
+    width: 24px; 
+    padding-right: 15px;
+}
+
+.buttons{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 25px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttons:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+
+footer {
+    bottom: 0;
+    left:0;  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    position: fixed;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 5px; 
+    font-size: 14px;     
+}
+
+ .footer-sx{
+
+    display: flex;
+    padding-left: 15px;
+ }
+
+ .footer-dx{
+
+    display: flex;
+    padding-right: 25px;
+ }
+ 
+ /* set space bewween a tag footer */
+
+ footer a {
+    display: inline-block;
+    padding: 15px;
+    color:#70757a;
+}
+
+
+/* On screens that are 735px or less, change the footer justify-content */
+@media screen and (max-width: 735px) {
+    
+    footer {
+      
+      justify-content:space-evenly;
+
+    }
+}
+
+
